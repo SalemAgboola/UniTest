@@ -1,0 +1,100 @@
+/* Global Styles */
+html, body {
+    margin: 0;
+    padding: 0;
+    height: auto;
+    min-height: 100%;
+    overflow-y: auto;
+}
+
+.auth-container {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    background-color: #f9f9f9;
+    margin: 0;
+    overflow-y: visible;
+    padding: 20px;
+}
+
+/* Form Wrapper */
+.auth-form-wrapper {
+    width: 90%; /* Default for smaller screens */
+    max-width: 400px; /* Limit width on larger screens */
+    padding: 20px 20px 40px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+}
+
+.auth-form-wrapper h1 {
+    text-align: center;
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+.auth-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.auth-error-message {
+    color: red;
+    text-align: center;
+    margin-top: 10px;
+}
+
+/* Links */
+.auth-links {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; /* Make links wrap on smaller screens */
+}
+
+.auth-link {
+    text-decoration: none;
+    color: teal;
+    font-size: 16px;
+}
+.auth-link:hover {
+    text-decoration: underline; 
+}
+
+/* Responsive Design - Media Queries */
+@media (max-width: 768px) {
+    .auth-form-wrapper {
+        width: 100%; /* Use full width */
+        max-width: 90%; /* Slight padding */
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 1.2em; /* Slightly smaller text */
+    }
+
+    .auth-links {
+        flex-direction: column; /* Stack links vertically */
+        align-items: center;
+        gap: 10px; /* Add space between links */
+    }
+
+    .auth-link {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .auth-form-wrapper {
+        padding: 10px; /* Reduce padding on very small screens */
+        border: none; /* Optional: remove border */
+        box-shadow: none; /* Optional: remove shadow */
+    }
+
+    h1 {
+        font-size: 1em; /* Smaller header for mobile */
+    }
+}

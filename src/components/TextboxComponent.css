@@ -1,0 +1,88 @@
+.text-box {
+  display: flex;
+  flex-direction: column; /* Default: Label on top */
+  margin-bottom: 15px;
+}
+
+.text-box label {
+  margin-bottom: 5px; /* Space between label and input */
+}
+
+.text-box-inner {
+  display: flex; /* Inline input and image */
+  align-items: center;
+  gap: 10px; /* Space between input and image */
+}
+
+.text-box input {
+  width: 100%; /* Make input adapt to container */
+  max-width: 300px; /* Limit max width of input */
+  padding: 8px;
+  font-size: 1em;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+  transition: background-color 0.3s, border-color 0.3s;
+}
+
+.text-box input:focus {
+  border-color: #008080;
+}
+
+.text-box img {
+  width: 50px; /* Adjust image size */
+  height: auto;
+  transition: filter 0.3s ease;
+}
+
+.text-box img.active {
+  /* Teal color */
+  filter: brightness(0) saturate(100%) invert(37%) sepia(93%) saturate(442%) hue-rotate(144deg) brightness(92%) contrast(88%);
+}
+
+/* Center the login button */
+button {
+  display: block;
+  margin: 20px auto; /* Center horizontally with auto */
+  padding: 10px 20px;
+  background: #008080;
+  color: white;
+  font-size: 1em;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background: #006666;
+}
+
+/* Responsive Design Adjustments */
+
+/* Tablet screens (768px and above) */
+@media (min-width: 768px) {
+  .text-box-inner {
+    gap: 15px; /* Increase space between input and image */
+  }
+
+  .text-box input {
+    max-width: 400px; /* Allow larger inputs on wider screens */
+  }
+}
+
+/* Mobile screens (480px and below) */
+@media (max-width: 480px) {
+  .text-box-inner {
+    gap: 8px; /* Reduce spacing for smaller screens */
+  }
+
+  .text-box img {
+    width: 40px; /* Shrink image slightly */
+  }
+
+  .text-box input {
+    font-size: 0.9em; /* Slightly smaller text size */
+    padding: 6px; /* Adjust padding */
+  }
+}

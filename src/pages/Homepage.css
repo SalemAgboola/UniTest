@@ -1,0 +1,150 @@
+/* General Styles */
+body {
+  margin: 0;
+  padding: 0;
+  overflow-y: hidden;
+  font-family: "Poppins", Arial, sans-serif;
+}
+
+.homepage1{
+  overflow: hidden;
+}
+
+.homepage {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  background: linear-gradient(135deg, #008080, #ffffff);
+  overflow: hidden;
+}
+
+.content {
+  flex: 1;
+  padding: 30px;
+  margin-left: 250px; /* Sidebar width for larger screens */
+  background-color: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+  overflow-y: auto;
+}
+
+.page-header {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  color: #004d4d;
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.collapsible-boxes {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.collapsible-box {
+  background: #ffffff;
+  border: 1px solid #cce7e7;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.collapsible-box:hover {
+  transform: translateY(-2px);
+  box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+.collapsible-header {
+  background: #008080;
+  color: white;
+  padding: 15px;
+  cursor: pointer;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  justify-content: space-between;
+}
+
+.collapsible-content {
+  padding: 15px;
+  background: #f7f7f7;
+  max-height: 200px;
+  overflow-y: auto;
+}
+
+.collapsible-content li {
+  padding: 10px 15px;
+  border-bottom: 1px solid #e0e0e0;
+  font-size: 16px;
+}
+
+.collapsible-content li:hover {
+  background-color: #e6ffff;
+}
+
+.linkc {
+  color: black;
+  text-decoration: none;
+}
+
+/* --- Responsive Styles --- */
+@media (max-width: 768px) {
+  .homepage {
+    flex-direction: column; /* Stack sidebar and content vertically */
+  }
+
+  .sidebar {
+    width: 100px; /* Narrow sidebar for smaller screens */
+  }
+
+  .content {
+    margin-left: 0; /* No fixed margin */
+    padding: 15px; /* Adjust padding for smaller screens */
+  }
+
+  .page-header {
+    font-size: 24px; /* Adjust header font size */
+  }
+
+  .collapsible-header {
+    padding: 10px;
+    font-size: 14px;
+  }
+
+  .collapsible-content li {
+    font-size: 14px;
+  }
+}
+
+
+  @media (max-width: 480px) {
+    .homepage {
+      display: flex;
+      flex-direction: row; /* Ensures sidebar and content stay side by side */
+    }
+  
+  
+    .content {
+      margin-left: 0; /* Removes the fixed gap */
+      flex: 1; /* Allows the content to take the remaining space */
+      width: auto; /* Adjust width dynamically */
+    }
+  }
+  
+
+  .page-header {
+    font-size: 20px;
+  }
+
+  .collapsible-header {
+    font-size: 12px;
+    padding: 8px;
+  }
+
+  .collapsible-content li {
+    font-size: 12px;
+  }
+

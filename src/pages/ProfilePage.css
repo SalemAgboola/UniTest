@@ -1,0 +1,50 @@
+.profile-page {
+    padding: 20px;
+    background-color: #f9f9f9;
+    min-height: 100vh;
+  }
+  
+  .profile-header {
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  .profile-card {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    margin-top: -30px;
+    margin-left: 350px;
+  }
+  
+  .profile-item {
+    font-size: 18px;
+    margin: 10px 0;
+  }
+  
+  .profile-item strong {
+    color: #333;
+  }
+  
+  /* Ensure the Header1 component stacks above the profile */
+  .profile-page > header {
+    margin-bottom: 20px;
+  }
+  
+  @media (max-width: 768px) {
+    .profile-card {
+      padding: 15px;
+    }
+    .profile-item {
+      font-size: 16px;
+    }
+  }
+  @media (max-width: 480px){
+    .profile-card{
+        margin-left: 55px;
+    }
+  }
+  

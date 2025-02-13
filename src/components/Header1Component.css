@@ -1,0 +1,160 @@
+.Header1 {
+  background: linear-gradient(90deg, #005959, #008080);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 30px;
+  height: 90px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.logo-section {
+  display: flex;
+  align-items: center;
+}
+
+.site-name {
+  font-size: 50px; /* Adjust font size as needed */
+  font-weight: bold;
+  font-family: "Poppins", Arial, sans-serif;
+  white-space: nowrap; /* Prevents text wrapping */
+  overflow: hidden; /* Ensures text doesn't overflow the container */
+  text-overflow: ellipsis; /* Adds "..." if the text exceeds the container */
+}
+
+.site-logo {
+  width: 200px;
+  height: auto;
+}
+
+.profile-details {
+  display: flex;
+  flex-direction: column;
+  text-align: right;
+}
+
+.user-info {
+  margin: 0;
+  font-size: 18px;
+}
+
+.breadcrumbs {
+  margin-top: 5px;
+  font-size: 14px;
+  color: #cce7e7;
+  font-style: italic;
+}
+
+.breadcrumb-link {
+  color: white;
+  text-decoration: none;
+}
+
+.breadcrumb-link:hover {
+  color: #e6ffff;
+  text-decoration: underline;
+}
+
+.userdata {
+  font-style: italic;
+  font-size: 20px;
+  font-weight: 500;
+  color: white;
+  text-decoration: underline;
+}
+
+.userdata1 {
+  font-style: italic;
+  font-size: 20px;
+  font-weight: 500;
+  color: black;
+  text-decoration: underline;
+}
+
+/* Responsive Design: Devices smaller than 768px */
+@media (max-width: 768px) {
+  .Header1 {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .logo-section {
+    flex-direction: column; /* Stack user details and logo */
+    align-items: flex-start;
+    gap: 10px;
+    width: 100%;
+  }
+
+  .site-name {
+    font-size: 28px;
+    text-align: center;
+    margin-top: 10px;
+  }
+
+  .profile-details {
+    font-size: 12px;
+  }
+
+  .breadcrumbs {
+    font-size: 12px;
+  }
+
+  .site-logo {
+    width: 70px; /* Adjust logo size */
+  }
+}
+
+/* Responsive Design: Devices smaller than 480px */
+@media (max-width: 480px) {
+  .Header1 {
+    padding-top: 0px;
+  }
+
+  .logo-section {
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+
+  .site-name {
+    display: none;
+  }
+
+  .profile-details {
+    font-size: 11px;
+    margin-top: 15px;
+    margin-right: -60px;
+  }
+
+  .site-logo {
+    width: 200px; /* Smaller logo size */
+    height: auto;
+    object-fit: contain;
+    margin-top: -100px;
+    margin-right: -80px;
+  }
+
+  .breadcrumbs {
+    font-size: 11px;
+  }
+
+  .breadcrumb-link {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .breadcrumb-link:hover {
+    color: #e6ffff;
+    text-decoration: underline;
+  }
+
+  .user-info{
+    font-size: 13px;
+  }
+
+  .userdata,
+  .userdata1 {
+    font-size: 15px; /* Adjust userdata font size */
+  }
+}

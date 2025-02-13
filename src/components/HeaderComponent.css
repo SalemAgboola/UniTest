@@ -1,0 +1,38 @@
+.Header {
+    background-color: #008080;  
+    color: #ffffff;             
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;       
+    padding-left: 20px;          
+    font-size: 30px;            
+    font-weight: bold; 
+    border-bottom-right-radius: 25px;
+    border-bottom-left-radius: 25px;
+    height: 100px;
+  }
+  
+  
+  .Header.logged-in {
+    background-color: #008080; 
+  }
+  .Logo {
+    width: 150px; /* Adjust width */
+    height: auto; /* Keep aspect ratio */
+    object-fit: contain; /* Ensure it doesn't stretch */
+    margin-left: -25px;
+  }
+  .Logo2 {
+    width: 50px;
+    height: auto;
+    object-fit: contain;
+    margin-left: 20px;
+    margin-top: -20px;
+    display: inline;
+  }
+  @media (max-width: 480px){
+    .Header h1 {
+      font-size: 35px; /* Smaller font for mobile */
+  }
+  }
+  

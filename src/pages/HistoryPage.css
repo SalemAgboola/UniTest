@@ -1,0 +1,64 @@
+/* HistoryPage.css */
+
+.history-page {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.history-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.loading {
+  font-size: 16px;
+  color: #666;
+  text-align: center;
+}
+
+.no-results {
+  font-size: 14px;
+  color: #999;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.quiz-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.quiz-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: background-color 0.2s, box-shadow 0.2s;
+}
+
+.quiz-item:hover {
+  background-color: #f9f9f9;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.quiz-info {
+  flex: 1;
+}
+
+
+.quiz-name {
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.quiz-date {
+  font-size: 14px;
+  color: #666;
+}
